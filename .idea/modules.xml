@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/WASM-video-editor.iml" filepath="$PROJECT_DIR$/.idea/WASM-video-editor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../wasm_video_editor/.idea/WASM-video-editor.iml" filepath="$PROJECT_DIR$/../wasm_video_editor/.idea/WASM-video-editor.iml" />
     </modules>
   </component>
 </project>
