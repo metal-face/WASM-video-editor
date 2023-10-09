@@ -1,4 +1,5 @@
 use yew::prelude::*;
+use yew::{classes, html};
 
 #[function_component]
 fn App() -> Html {
@@ -12,9 +13,9 @@ fn App() -> Html {
     };
 
     html! {
-        <div>
-            <button {onclick}>{ "+1" }</button>
-            <p>{ *counter }
+        <div >
+            <button class={classes!("bg-red-100")} {onclick}>{ "+1" }</button>
+            <p>{ *counter }</p>
         </div>
     }
 }
