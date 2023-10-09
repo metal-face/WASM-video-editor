@@ -2,8 +2,10 @@
 name = "wasm_video_editor"
 version = "0.1.0"
 edition = "2021"
+authors = ["metal-face <hughesbryan3000@gmail.com>"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 # this is the development version of Yew
 yew = { git = "https://github.com/yewstack/yew/", features = ["csr"] }
+gloo = "0.3"
