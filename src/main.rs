@@ -1,7 +1,4 @@
-use gloo::console::log;
 use gloo::dialogs::alert;
-use gloo::timers::callback::Timeout;
-use wasm_bindgen::JsValue;
 use yew::prelude::*;
 use yew::{classes, html};
 
@@ -30,12 +27,5 @@ fn App() -> Html {
 }
 
 fn main() {
-    let timeout = Timeout::new(1_000, move || {
-        let object = JsValue::from("any JsValue can be logged");
-        log!("text", object);
-    });
-
-    // Since we don't plan on cancelling the timeout, call `forget`.
-    timeout.forget();
     yew::Renderer::<App>::new().render();
 }
