@@ -1,4 +1,3 @@
-use gloo::dialogs::alert;
 use yew::prelude::*;
 use yew::{classes, html};
 
@@ -10,16 +9,15 @@ fn App() -> Html {
         move |_| {
             let value = *counter + 1;
             counter.set(value);
-            alert("balls in your face sonnnn")
         }
     };
 
     html! {
-        <div class="flex flex-col h-screen bg-400-red">
-            <nav class="bg-green-400 h-16 px-8 py-2">
-                <div class="container flex mx-auto gap-6 items-center h-full">
+        <div class={classes!("bg-red-400", "h-full")}>
+            <nav class={classes!("h-full")}>
+                <div class={classes!("bg-red-400", "h-full")}>
                     <button {onclick}>{ "+1" }</button>
-                    <p>{ *counter }</p>
+                    <p class={classes!("text-emerald-600")}>{ *counter }</p>
                 </div>
             </nav>
         </div>
