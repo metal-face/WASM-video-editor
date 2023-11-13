@@ -14,7 +14,7 @@ pub fn app_bar() -> Html {
                 <div class="h-fit text-white hover:underline m-1">
                     <Link<Route> to={Route::Home}>{"Home"}</Link<Route>>
                 </div>
-                <div class="m-1 text-white">
+                <div class="h-fit hover:underline m-1 text-white">
                     <Link<Route> to={Route::Login}>{"Login"}</Link<Route>>
                 </div>
             </div>
