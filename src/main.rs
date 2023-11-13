@@ -9,7 +9,9 @@ use yew_router::prelude::*;
 pub fn app() -> Html {
     html! {
         <BrowserRouter>
-            <Switch<Route> render={switch} />
+            <main class="h-screen w-screen">
+                <Switch<Route> render={switch} />
+            </main>
         </BrowserRouter>
     }
 }
