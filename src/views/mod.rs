@@ -1,1 +1,1 @@
-pub mod Home;
+pub mod home;
