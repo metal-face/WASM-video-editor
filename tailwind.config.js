@@ -5,6 +5,9 @@ module.exports = {
     "./index.html"
   ],
   theme: {
+    container: {
+      center: false
+    },
     extend: {},
   },
   plugins: [],
