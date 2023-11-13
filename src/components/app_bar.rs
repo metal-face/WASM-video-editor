@@ -6,13 +6,16 @@ use crate::router::index::Route;
 #[function_component(AppBar)]
 pub fn app_bar() -> Html {
     html! {
-        <div class="sticky w-screen h-16 bg-slate-800 flex justify-between align-middle">
-            <div class="w-1/2 h-max">
-                <h1>{"WASM Video Editor"}</h1>
+        <div style="align-items: center;"  class="flex shadow-xl sticky h-12 w-full bg-slate-800">
+            <div class="h-auto w-1/2 pl-3">
+                <h1 class=" text-white">{"WASM Video Editor"}</h1>
             </div>
-            <div class="w-1/2">
-                <div class="mr-12">
+            <div class="flex justify-end h-auto w-1/2">
+                <div class="h-fit text-white hover:underline m-1">
                     <Link<Route> to={Route::Home}>{"Home"}</Link<Route>>
+                </div>
+                <div class="m-1 text-white">
+                    <Link<Route> to={Route::Login}>{"Login"}</Link<Route>>
                 </div>
             </div>
         </div>
