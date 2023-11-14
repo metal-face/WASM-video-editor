@@ -1,4 +1,5 @@
 mod components;
+mod icons;
 mod router;
 mod views;
 
