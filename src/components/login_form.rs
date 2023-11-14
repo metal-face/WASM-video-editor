@@ -14,6 +14,9 @@ pub fn login_form() -> Html {
                         <label class="text-center" for="password">{"Password"}</label>
                         <input class="rounded p-1" id="password" type="password" placeholder="Password" />
                     </div>
+                    <div class="flex h-fit justify-items-end items-end">
+                        <button class="rounded p-1 shadow-xl bg-slate-600 text-white" type="button">{"Login"}</button>
+                    </div>
                 </div>
             </div>
         </div>
