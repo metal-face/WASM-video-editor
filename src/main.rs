@@ -42,7 +42,7 @@ impl Component for App {
         html! {
             <BrowserRouter>
                 <main class="h-screen w-screen">
-                    <AppBar />
+                    <AppBar close_drawer={on_opened}/>
 
                     <NavigationDrawer drawer_state={self.drawer_state} toggle_state={on_closed}/>
                     <Switch<Route> render={switch} />
