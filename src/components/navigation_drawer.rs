@@ -1,4 +1,4 @@
-use yew::{html, AttrValue, Callback, Component, Context, Html, Properties, UseStateHandle};
+use yew::{html, Callback, Component, Context, Html, Properties};
 
 use super::*;
 
