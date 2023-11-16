@@ -8,7 +8,7 @@ pub struct NavigationDrawer;
 pub struct NavDrawerProps {
     pub drawer_state: Option<bool>,
     pub toggle_state: Callback<bool>,
-}   
+}
 
 impl Component for NavigationDrawer {
     type Message = ();
@@ -22,7 +22,7 @@ impl Component for NavigationDrawer {
         let onclick = ctx.props().toggle_state.reform(move |_| false);
         if ctx.props().drawer_state.unwrap() {
             html! {
-                <nav class="h-full w-1/4 bg-slate-400">
+                <nav class="h-full w-1/4 bg-slate-400 absolute z-10">
                     <div>
                         <p>{"Good Day"}</p>
                     </div>
