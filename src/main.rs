@@ -6,7 +6,7 @@ mod views;
 use crate::components::app_bar::AppBar;
 use crate::components::navigation_drawer::NavigationDrawer;
 use crate::router::index::{switch, Route};
-use yew::{html, Component, Context, Html};
+use yew::{classes, html, Component, Context, Html};
 use yew_router::prelude::*;
 
 pub enum Msg {
@@ -41,7 +41,7 @@ impl Component for App {
 
         html! {
             <BrowserRouter>
-                <main class="h-screen w-screen">
+                <main class={classes!("h-screen", "w-screen")}>
                     <AppBar close_drawer={on_opened} drawer_state={self.drawer_state}/>
 
                     <NavigationDrawer drawer_state={self.drawer_state} toggle_state={on_closed}/>
