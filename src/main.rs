@@ -20,13 +20,13 @@ impl Component for App {
     type Message = Msg;
     type Properties = ();
 
-    fn create(ctx: &Context<Self>) -> Self {
+    fn create(_ctx: &Context<Self>) -> Self {
         Self {
-            drawer_state: Some(true),
+            drawer_state: Some(false),
         }
     }
 
-    fn update(&mut self, ctx: &Context<Self>, msg: Self::Message) -> bool {
+    fn update(&mut self, _ctx: &Context<Self>, msg: Self::Message) -> bool {
         match msg {
             Msg::ButtonClick(drawer_state) => {
                 self.drawer_state = Some(drawer_state);
